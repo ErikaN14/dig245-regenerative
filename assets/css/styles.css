@@ -7,6 +7,16 @@
     width: 400px;
     height: 400px;
     background-color: black;
+    position: absolute;
+    border-radius: 50px;
+    left: 450px;
+    top: 250px;
+}
+
+.generator_steps{
+    /* text-align: center; */
+    font-size: 20px;
+    position: center;
 }
 
 .slider {
