@@ -4,12 +4,60 @@
     <!-- meta tags, links to css, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" /> -->
     <title>Generative Design</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
     <!-- visible content goes here -->
+    <div class="container">
+        <div class="row Title">
+            <div class="col-12 text-center title">
+                <div class="title">
+                    <h1>Music Generator</h1>
+                </div>
+            </div>
+            <div class="row information">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 left-align">
+                    <p class="test_info">
+                        Move the slider button to choose a different year from the range listed. For each year that you slide to, a random song from that genre will play to the right.
+                    </p>
+                </div>
+
+                <!-- Note: Ask on how to make range values so it is based on a decade and not individual years within each decade -->
+                <div class="slidecontainer ">
+                    <input type="range" min="1950" max="2020" value="10" class="slider" id="myRange">
+                    <p> Value: <span id="demo"></span></p>
+                </div>
+
+                <!-- Trying to get image "box" to be on the right side of the text -->
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 right-align">
+                    <p class="song_image">
+                    </p>
+                </div>
+            </div>
+            
+
+
+        <!-- <div class="row instructions">
+            <div class="row test_3_row_1">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 left-align">
+                    <p class="about">
+                      Move the slider button to choose a different year from the range listed. For each year that you slide to, a random song from that genre will play to the right.</p>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="song_image">
+                         Create a box to show where song description will go
+                    </div> 
+
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- <div class="" -->
 
     <!-- load javascript after the page elements render -->
     <script src="assets/js/main.js"></script>
