@@ -1,16 +1,20 @@
 /* css */
+body{
+    background-color: #4A5759;
+}
 .title {
     text-align: center;
+    color: #DEDBD2;
 }
 
 .song_image{
     width: 400px;
     height: 400px;
     background-color: black;
-    position: absolute;
     border-radius: 50px;
+    /* position: absolute;
     left: 450px;
-    top: 250px;
+    top: 250px; */
 }
 
 
@@ -20,11 +24,8 @@
 }
 
 .song_info {
-    position: absolute;
-    left: 450px;
-    top: 650px;
 
-}
+} 
 
 /* Slider code is coming from W3 Schools
 Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
