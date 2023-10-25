@@ -1,5 +1,7 @@
 /* javascript */
 
+// All code is coming from W3 Schools
+// Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
