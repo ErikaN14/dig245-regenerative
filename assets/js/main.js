@@ -1,5 +1,7 @@
 /* javascript */
 
+//Began adding AI code
+
 // All code is coming from W3 Schools
 // Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
 var slider = document.getElementById("myRange");
