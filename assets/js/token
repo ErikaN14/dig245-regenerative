@@ -1,0 +1,10 @@
+(Tokens last one hour add lines 3-5 on terminal for new token)
+(Do not add commit this file on github!)
+
+curl -X POST "https://accounts.spotify.com/api/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=22f469b921a348d18110a9053eca1c1f&client_secret=41f97c08c9e14c018a583a36514dd77e"
+
+
+curl "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb" \
+     -H "Authorization: Bearer  BQAMDsv5rJpWiVbDZCHCHAGwqPVciBvU7vAFf5WsIoocXGkmDykkuybUWy5RnnZXZDZlweMU139gE8gIhFp7SfEfpq5nVz6B8_EVD_IF7pfJ3qdPKaA"
