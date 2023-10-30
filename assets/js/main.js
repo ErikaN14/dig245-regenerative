@@ -29,7 +29,7 @@ async function getData(url) {
   };
 
   // request external resource
-  fetch(url, options)
+  return fetch(url, options)
     // the entire response object
     .then((response) => {
       // console.log(response);
@@ -40,7 +40,8 @@ async function getData(url) {
     })
     .then((data) => {
       // data = the deserialized data of the external file
-      console.log(data); // log the object
+    //   console.log(data); // log the object
+	return data;
     })
 	.catch((err) =>{
 console.warn(err)
@@ -50,7 +51,7 @@ console.warn(err)
 // let data = getData("https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb");
 
 (async function () {
-  console.log(123);
+  //console.log(123);
   // search
   let range = "1955-1960";
   
@@ -66,5 +67,6 @@ console.warn(err)
   );
 
 
-  console.log(data);
+//   console.log(data);
+  console.log(data.track_number);
 })();
