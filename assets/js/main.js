@@ -51,9 +51,8 @@ async function getData(url) {
 		`https://api.spotify.com/v1/search?q=artist:Miles%20Davis%20year:${range}&type=album`
 	);
 	console.log(data);
-});
 
-// Code Verifier (authorization code Step 1):
+  // Code Verifier (authorization code Step 1):
 const generateRandomString = (length) => {
   const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   const values = crypto.getRandomValues(new Uint8Array(length));
@@ -167,4 +166,5 @@ async function getProfile(accessToken) {
   const data = await response.json();
 }
 
+});
 
