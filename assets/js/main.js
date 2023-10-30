@@ -1,5 +1,8 @@
 /* javascript */
 
+// For each track there is an image URL
+  //Create a const variable that is equal to the image url and a function that allows to display the image
+
 //Began adding AI code
 
 // All code is coming from W3 Schools
@@ -20,6 +23,7 @@ async function getData(url) {
 		headers: {
 			"Content-type": "application/json",
 			Authorization:
+        //Update token after every hour!
 				"Bearer BQAy_nqlhqv6lzcVlZ2aOrevEg736CW52p1yWZPQ6p4r2WVFJT4ArT_S8gtEzIFXGFnqswwuMzVPz5kY4Z8IGv5JJzGS-S5e2F7nJrq1tgwl_L77X9E"
 		}
 	};
@@ -46,7 +50,7 @@ async function getData(url) {
 	// search
 	let range = "1955-1960";
 	let data = await getData(
-		`https://api.spotify.com/v1/search?q=artist:Miles%20Davis%20year:${range}&type=album`
+		`https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl`
 	);
 	console.log(data);
 });
