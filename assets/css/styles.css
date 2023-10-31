@@ -1,10 +1,14 @@
 /* css */
 body{
-    background-color: #4A5759;
+    background-color: #DEDBD2;
+}
+p{
+  margin-top: 3px;
 }
 .title {
-    text-align: center;
-    color: #DEDBD2;
+    text-align: left;
+    font-weight: bold;
+    color: #4A5759;
 }
 
 .song_image{
@@ -23,9 +27,10 @@ body{
     position: center;
 }
 
-/* .song_info {
-
-}  */
+.song_info {
+  color:#4A5759;
+  font-weight: bold;
+}  
 
 /* Slider code is coming from W3 Schools
 Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
@@ -35,7 +40,9 @@ Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
     width: 100%;
     height: 10px;
     border-radius: 5px;
-    background: #d3d3d3;
+    background: #4A5759;
+    /* color:#4A5759;
+    font-weight: bold; */
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -52,7 +59,7 @@ Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #EDAFB8;
     cursor: pointer;
   }
   

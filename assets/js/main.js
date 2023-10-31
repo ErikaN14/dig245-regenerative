@@ -24,7 +24,7 @@ async function getData(url) {
       "Content-type": "application/json",
       Authorization:
         //Update token after every hour!
-        "Bearer BQBieBUduPmMBn4STIICRK0AlGQj1g3GkPjOudAS92jqYFsEo3fvAE2IfR40_wLGRQ0hxmeshU3za9mssRTt6HzH_plL1o7_OSN4ub67dG3G-cMEiD4",
+        "Bearer BQD8FXW_x2vgjQIi_cdlmMzwqR9HUxs0plOh9-NwfnpMER4Zw16G6HtqkxOGJtANIZe3pN4xR8EKZ3BqtRlnktYG98K0N9E-n6_nRwwi6vUh4PUuYo4",
     },
   };
 
@@ -68,13 +68,13 @@ console.warn(err)
 	let year = date[0];
 	for (let i = 1; i <= 3; i++){
 		year = year + date[i];
+		//console.log(year);
 	}
+	console.log(year);
+	console.log(data);
 
-	//  console.log(year);
-	//  console.log("test");
-	//  console.log(output == year);
-	 for(let i = output; i <= 9; i++){
-		console.log(i);
+	 for(let j = output; j <= 9; i++){ //what data type is value? (try to figure this out!!!)
+		console.log(j);
 		console.log("test");
 		if(year === output){
 			console.log(year === output);
