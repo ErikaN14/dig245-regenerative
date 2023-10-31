@@ -3,7 +3,7 @@
 // For each track there is an image URL
 //Create a const variable that is equal to the image url and a function that allows to display the image
 
-//Began adding AI code
+//Began adding API code
 
 // All code is coming from W3 Schools
 // Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
@@ -24,7 +24,7 @@ async function getData(url) {
       "Content-type": "application/json",
       Authorization:
         //Update token after every hour!
-        "Bearer BQDh2tvlA-uyd_cSHP9p8MwBgQgRkUV79Jt5JrSNJ6Y5kWLYg4g7SIELhH39UGzc1IT7jq6Fxggz-sent3m4credstdA3AG5OVdIHbVEjk_cjcMk3m4",
+        "Bearer BQBieBUduPmMBn4STIICRK0AlGQj1g3GkPjOudAS92jqYFsEo3fvAE2IfR40_wLGRQ0hxmeshU3za9mssRTt6HzH_plL1o7_OSN4ub67dG3G-cMEiD4",
     },
   };
 
@@ -53,20 +53,45 @@ console.warn(err)
 (async function () {
   //console.log(123);
   // search
-  let range = "1955-1960";
-  
-// range 
-// let data = await getData(
-// 	`https://api.spotify.com/v1/search?q=artist:Miles%20Davis%20year:${range}&type=album`
-// );
 
+  //defining range
+  let range = output + (output+9); //output = decade chosen on slider (adding 9 to go from start of decade to end of decade)
 
 //  track
   let data = await getData(
     `https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl`
   );
 
+	let date = data.album.release_date;
+
+	// Trying to get just the year in which the track was released
+	let year = date[0];
+	for (let i = 1; i <= 3; i++){
+		year = year + date[i];
+	}
+
+	//  console.log(year);
+	//  console.log("test");
+	//  console.log(output == year);
+	 for(let i = output; i <= 9; i++){
+		console.log(i);
+		console.log("test");
+		if(year === output){
+			console.log(year === output);
+		 }
+		//  else{
+		// 	console.log("This is false!")
+		//  }
+	 }
+
+
+
+  
+  
+
 
 //   console.log(data);
-  console.log(data.track_number);
+  //console.log(data);
+  //console.log(data.album.release_date);
+  //console.log(date[0]);
 })();
