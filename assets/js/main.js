@@ -6,8 +6,8 @@
 //Began adding API code
 
 //Questions to ask:
-	// How to randomize tracks given on terminal (new tracks each time)?
-	// If track is not within decade needed, how to refresh track set given to produce a new set of tracks?
+// How to randomize tracks given on terminal (new tracks each time)?
+// If track is not within decade needed, how to refresh track set given to produce a new set of tracks?
 
 // All code is coming from W3 Schools
 // Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
@@ -18,11 +18,7 @@ output.innerHTML = slider.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function () {
   output.innerHTML = this.value;
-  //<button onclick="myFunction()">Click me</button>
 };
-// object.onclick = function () {
-//   myScript;
-// };
 
 // async version
 async function getData(url) {
@@ -60,30 +56,31 @@ async function getData(url) {
 
 //to get new random tracks each time
 function getRandomSearch() {
-	// A list of all characters that can be chosen.
-	const characters = 'abcdefghijklmnopqrstuvwxyz';
-	
-	// Gets a random character from the characters string.
-	const randomCharacter = characters.charAt(Math.floor(Math.random() * characters.length));
-	let randomSearch = '';
-  
-	// Places the wildcard character at the beginning, or both beginning and end, randomly.
-	switch (Math.round(Math.random())) {
-	  case 0:
-		randomSearch = randomCharacter + '%';
-		break;
-	  case 1:
-		randomSearch = '%' + randomCharacter + '%';
-		break;
-	}
-  
-	return randomSearch;
-  }
-  const randomOffset = Math.floor(Math.random() * 10000);
+  // A list of all characters that can be chosen.
+  const characters = "abcdefghijklmnopqrstuvwxyz";
 
+  // Gets a random character from the characters string.
+  const randomCharacter = characters.charAt(
+    Math.floor(Math.random() * characters.length)
+  );
+  let randomSearch = "";
+
+  // Places the wildcard character at the beginning, or both beginning and end, randomly.
+  switch (Math.round(Math.random())) {
+    case 0:
+      randomSearch = randomCharacter + "%";
+      break;
+    case 1:
+      randomSearch = "%" + randomCharacter + "%";
+      break;
+  }
+
+  return randomSearch;
+}
+const randomOffset = Math.floor(Math.random() * 10000);
 
 (async function () {
-  //defining range
+  //defining range (is it needed?)
   let range = output + (output + 9); //output = decade chosen on slider (adding 9 to go from start of decade to end of decade)
 
   //  track
@@ -98,8 +95,8 @@ function getRandomSearch() {
   for (let i = 1; i <= 3; i++) {
     trackYear = trackYear + date[i];
   }
-  console.log(trackYear.slice(0, 3)); //at this point, I have the year in which the track was released
-  console.log(output.innerHTML.slice(0, 3));
+  //console.log(trackYear.slice(0, 3)); //at this point, I have the year in which the track was released
+  //console.log(output.innerHTML.slice(0, 3)); //decade choasen on slider by user
 
   //checking to see if year track was released is within decade chosen on slider
   if (trackYear.slice(0, 3) === output.innerHTML.slice(0, 3)) {
