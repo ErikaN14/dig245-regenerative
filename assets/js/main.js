@@ -1,13 +1,7 @@
 /* javascript */
 
-// For each track there is an image URL
-//Create a const variable that is equal to the image url and a function that allows to display the image
-
 //Began adding API code
 
-//Questions to ask:
-// How to randomize tracks given on terminal (new tracks each time)?
-// If track is not within decade needed, how to refresh track set given to produce a new set of tracks?
 
 // All code is coming from W3 Schools
 // Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
@@ -31,7 +25,7 @@ async function getData(url) {
       "Content-type": "application/json",
       Authorization:
         //Update token after every hour!
-        "Bearer BQBRC9X2JhtWeZD3LPO2Q2qI3r4JHzoRXqr4t2pSkMYnpr7LbAcIypOOLnzoYbNVwHm1fsZvCUz0_-U55uFSg547bKOJ5XgNwgwiq07y9g_BP7hGhO8",
+        "Bearer BQCWs7LCT_LyiebYBYfu_wsZH7FyilorPmxx-xqyTUnqbSI2v05-ccIDB7AdAr5Ppf8KFx0aCM87Kh3B69hBuC5f0F2Z5tt6ydw-GhGsOWvD9gc92ek",
     },
   };
 
@@ -103,23 +97,23 @@ async function updateTrack(year) {
 
 return;
 
-  // Trying to get just the year in which the track was released
-  let trackYear = date[0];
-  for (let i = 1; i <= 3; i++) {
-    trackYear = trackYear + date[i];
-  }
-  //console.log(trackYear.slice(0, 3)); //at this point, I have the year in which the track was released
-  //console.log(output.innerHTML.slice(0, 3)); //decade choasen on slider by user
+  // // Trying to get just the year in which the track was released
+  // let trackYear = date[0];
+  // for (let i = 1; i <= 3; i++) {
+  //   trackYear = trackYear + date[i];
+  // }
+  // //console.log(trackYear.slice(0, 3)); //at this point, I have the year in which the track was released
+  // //console.log(output.innerHTML.slice(0, 3)); //decade choasen on slider by user
 
-  //checking to see if year track was released is within decade chosen on slider
-  //console.log('123');
-  //console.log(data.album.images[0].url);
-  if (trackYear.slice(0, 3) === output.innerHTML.slice(0, 3)) {
-    const trackImage = data.album.images[0].url; //double check syntax
-    //would use this in HTML to link song to image
-    console.log("Test");
-  } else {
-    console.log(trackYear.slice(0, 3) === output.innerHTML.slice(0, 3));
-    //generate a new set of tracks to look at (have a function for this but it is not working)
-  }
+  // //checking to see if year track was released is within decade chosen on slider
+  // //console.log('123');
+  // //console.log(data.album.images[0].url);
+  // if (trackYear.slice(0, 3) === output.innerHTML.slice(0, 3)) {
+  //   const trackImage = data.album.images[0].url; //double check syntax
+  //   //would use this in HTML to link song to image
+  //   console.log("Test");
+  // } else {
+  //   console.log(trackYear.slice(0, 3) === output.innerHTML.slice(0, 3));
+  //   //generate a new set of tracks to look at (have a function for this but it is not working)
+  // }
 };
