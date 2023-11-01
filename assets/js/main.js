@@ -103,12 +103,8 @@ function getRandomSearch() {
 
   //checking to see if year track was released is within decade chosen on slider
   if (trackYear.slice(0, 3) === output.innerHTML.slice(0, 3)) {
-    //console.log(trackYear[0,3] === sliderYear[0,3]);
-    //track year is within decade chosen on slider
     //add track to webpage
   } else {
-    console.log("false!");
-    //track year is not within decade chosen on slider
-    //find another track
+    //generate a new set of tracks to look at
   }
 })();
