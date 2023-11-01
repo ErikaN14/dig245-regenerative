@@ -11,7 +11,7 @@ p {
   color: #4a5759;
 }
 
-.song_image {
+/* .song_image {
   width: 400px;
   height: 400px;
   background-color: black;
@@ -19,7 +19,7 @@ p {
   /* position: absolute;
     left: 450px;
     top: 250px; */
-}
+/* } */ 
 
 .generator_steps {
   font-size: 20px;
