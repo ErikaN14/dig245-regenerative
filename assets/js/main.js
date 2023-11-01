@@ -33,8 +33,7 @@ async function getData(url) {
   };
 
   // request external resource
-  return (
-    fetch(url, options)
+  return fetch(url, options)
       // the entire response object
       .then((response) => {
         // console.log(response);
@@ -51,7 +50,7 @@ async function getData(url) {
       .catch((err) => {
         console.warn(err);
       })
-  );
+ // );
 }
 
 //to get new random tracks each time
@@ -100,7 +99,7 @@ const randomOffset = Math.floor(Math.random() * 10000);
 
   //checking to see if year track was released is within decade chosen on slider
   if (trackYear.slice(0, 3) === output.innerHTML.slice(0, 3)) {
-    //add track to webpage
+    // const trackImage = 
   } else {
     //generate a new set of tracks to look at
   }
