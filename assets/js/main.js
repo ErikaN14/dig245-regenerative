@@ -22,7 +22,7 @@ async function getData(url) {
       "Content-type": "application/json",
       Authorization:
         //Update token after every hour!
-        "Bearer BQAvog9uHyoEgMF-XAoNLWKQjPGfAE3Fx1TW9TIhkuklATC-4gBJniIC3LFS2r7R-OeJ8b0a9TFz7ckqQlB8zKdFckjZoI37uj7yIpos0w43fk-MHlY",
+        "Bearer BQC5RUrukWoK7QuP-G3wz7a1wEb4nWiapOnNAapKZg2AqThoox4OfmODrOb1DQ5yZhVolwo0Qq4t87CUiPhtz6LJTzMmbal1-oiSaRRqyc6NRpGjAKA",
     },
   };
 
